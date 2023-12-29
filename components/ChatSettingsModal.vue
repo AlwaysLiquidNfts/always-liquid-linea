@@ -21,7 +21,7 @@
           >
 
           <label class="form-check-label" for="flexCheckChecked">
-            Show replies in home feed
+            Show replies in feed
           </label>
         </div>
 

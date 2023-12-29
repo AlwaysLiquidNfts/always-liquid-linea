@@ -11,7 +11,7 @@ export default defineNuxtPlugin(() => {
       return "Optimism";
     } else if (chainId === 14) {
       return "Flare";
-    }  else if (chainId === 19) {
+    } else if (chainId === 19) {
       return "Songbird";
     } else if (chainId === 56) {
       return "BNB Smart Chain";
@@ -31,6 +31,8 @@ export default defineNuxtPlugin(() => {
       return "Fantom Testnet";
     } else if (chainId === 42161) {
       return "Arbitrum";
+    } else if (chainId === 59144) {
+      return "Linea";
     } else if (chainId === 421611) {
       return "Arbitrum Testnet";
     } else if (chainId === 421613) {
@@ -76,6 +78,16 @@ export default defineNuxtPlugin(() => {
     if (networkName == "Ethereum") {
       method = "wallet_switchEthereumChain"
       params = [{ chainId: "0x1" }] 
+    } else if (networkName == "Linea") {
+      networkId = 59144;
+      method = "wallet_addEthereumChain"
+      params = [{ 
+        blockExplorerUrls: [ "https://lineascan.build/" ],
+        chainId: ethers.utils.hexValue(networkId),
+        chainName: "Linea",
+        nativeCurrency: { decimals: 18, name: "ETH", symbol: "ETH" }, 
+        rpcUrls: [getRpcs2()[networkId]]
+      }] 
     } else if (networkName == "Polygon Testnet") {
       networkId = 80001;
       method = "wallet_addEthereumChain"

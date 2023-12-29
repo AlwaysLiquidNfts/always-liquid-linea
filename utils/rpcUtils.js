@@ -17,6 +17,7 @@ export function getRpcs() {
     "8453": "https://mainnet.base.org",
     "42161": "https://rpc.ankr.com/arbitrum",
     "43114": "https://rpc.ankr.com/avalanche",
+    "59144": "https://rpc.linea.build",
     "80001": "https://polygon-mumbai-bor.publicnode.com",
     "7777777": "https://rpc.zora.energy"
   }
@@ -43,6 +44,7 @@ export function getRpcs2() {
     "4002": "https://rpc.ankr.com/fantom_testnet",
     "42161": "https://rpc.ankr.com/arbitrum",
     "43114": "https://rpc.ankr.com/avalanche",
+    "59144": "https://rpc.linea.build",
     "80001": "https://polygon-testnet.public.blastapi.io",
     "7777777": "https://rpc.zora.energy"
   }

@@ -41,6 +41,7 @@
 
         <ul class="nav nav-pills flex-column">
 
+          <!-- Categories 
           <ul class="list-group">
             <NuxtLink 
               to="/"
@@ -55,23 +56,24 @@
           </ul>
 
           <hr />
-
-          <!-- Home 
-          <li class="nav-item p-1" @click="closeLeftSidebar">
-            <NuxtLink class="nav-link" :class="$route.path === '/' ? 'active' : ''" aria-current="page" to="/">
-              <i class="bi bi-house"></i> Home
-            </NuxtLink>
-          </li>
           -->
 
-          <!-- NFT Launchpad -->
+          <!-- Home -->
+          <li class="nav-item p-1" @click="closeLeftSidebar">
+            <NuxtLink class="nav-link" :class="$route.path === '/' ? 'active' : ''" aria-current="page" to="/">
+              <i class="me-1 bi bi-house"></i> NFTs
+            </NuxtLink>
+          </li>
+
+          <!-- NFT Launchpad 
           <li class="nav-item p-1" @click="closeLeftSidebar" v-if="$config.nftLaunchpadBondingAddress && $config.showFeatures.nftLaunchpad">
             <NuxtLink class="nav-link" :class="$route.path.startsWith('/nft') ? 'active' : ''" aria-current="page" to="/nft">
               <i class="bi bi-rocket-takeoff"></i> NFT Launchpad
             </NuxtLink>
           </li>
+          -->
 
-          <!-- Notifications -->
+          <!-- Notifications 
           <li v-if="isActivated" class="nav-item p-1" @click="closeLeftSidebar">
             <NuxtLink class="nav-link" :class="$route.path.startsWith('/notifications') ? 'active' : ''" aria-current="page" to="/notifications">
               <i class="bi bi-bell"></i> Notifications
@@ -84,6 +86,7 @@
 
             </NuxtLink>
           </li>
+          -->
 
           <!-- Profile -->
           <li v-if="isActivated" class="nav-item p-1" @click="closeLeftSidebar">
@@ -149,6 +152,34 @@
             </NuxtLink>
           </li>
           
+          <!-- Other chains -->
+          <li class="nav-item p-1 dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+              <i class="me-1 bi bi-link-45deg"></i> Other chains
+            </a>
+
+            <ul class="dropdown-menu">
+
+              <li class="pt-1 pb-1" @click="closeLeftSidebar">
+                <a class="dropdown-item" href="https://arbi.alwaysliquid.com" target="_blank">
+                  Arbitrum <small><i class="bi bi-box-arrow-up-right ms-1"></i></small>
+                </a>
+              </li>
+
+              <li class="pt-1 pb-1" @click="closeLeftSidebar">
+                <a class="dropdown-item" href="https://fantom.alwaysliquid.com" target="_blank">
+                  Fantom <small><i class="bi bi-box-arrow-up-right ms-1"></i></small>
+                </a>
+              </li>
+
+              <li class="pt-1 pb-1" @click="closeLeftSidebar">
+                <a class="dropdown-item" href="https://scroll.alwaysliquid.com" target="_blank">
+                  Scroll <small><i class="bi bi-box-arrow-up-right ms-1"></i></small>
+                </a>
+              </li>
+
+            </ul>
+          </li>
 
           <!-- More 
           <li class="nav-item p-1 dropdown">
