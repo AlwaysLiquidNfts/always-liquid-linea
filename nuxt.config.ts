@@ -69,6 +69,8 @@ export default defineNuxtConfig({
       iggyPostAddress: "",
       iggyPostMinterAddress: "",
       iggyPostStatsAddress: "",
+      imagekitEndpoint: process.env.IMAGEKIT_ENDPOINT,
+      imagekitPublicKey: process.env.IMAGEKIT_PUBLIC_KEY,
       ipfsGateway: "https://cloudflare-ipfs.com/ipfs/",
       keysAddress: "", // FriendKeys contract address 
       keysContext: "",
