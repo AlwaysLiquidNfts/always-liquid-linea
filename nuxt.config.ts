@@ -80,7 +80,7 @@ export default defineNuxtConfig({
       lpTokenSymbol: "LP tokens", // LP token symbol
       marketplacePostNftUrl: "https://niftyfair.io/linea/asset/0x63FE8216a66737CFE474DF3949F9081EbD4Bd800",
       marketplacePostNftItemUrl: "https://niftyfair.io/linea/asset/0x63FE8216a66737CFE474DF3949F9081EbD4Bd800/", // url (append nft id to it)
-      marketplaceNftCollectionBaseUrl: "https://niftyfair.io/linea/asset/", // url (append nft address to it)
+      marketplaceNftCollectionBaseUrl: "https://niftyfair.io/linea/collection/", // url (append nft address to it)
       newsletterLink: "https://paragraph.xyz/@iggy?modal=subscribe",
       nftDefaultRatio: 1, // default ratio for the NFT price bonding curve
       nftLaunchpadBondingAddress: "0x2D4144B4E00cf1dC1c4DeDa37cb1CaCEda030998", // NFT launchpad with bonding curve contract address
